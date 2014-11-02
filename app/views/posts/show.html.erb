@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @post.title %> <small>by <%= @post.author %></small></h1>
+
+<p><small><%= @post.created_at.strftime('%-d %B %Y %H:%M:%S') %></small></p>
+
+<div class="well">
+  <%= @post.body %>
+</div>
+
+<div class="btn-group">
+  <%= link_to 'Edit', edit_post_path(@post), class: 'btn btn-primary' %>
+  <%= link_to 'Back', posts_path, class: 'btn btn-default' %>
+</div>
