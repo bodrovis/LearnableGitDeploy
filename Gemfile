@@ -4,11 +4,10 @@ gem 'rails', '4.1.7'
 # Use sqlite3 as the database for Active Record
 
 group :development do
-  gem 'faker'
   gem 'annotate'
 end
 
-
+gem 'faker'
 gem 'sqlite3'
 gem 'bootstrap-sass'
 gem 'will_paginate'
